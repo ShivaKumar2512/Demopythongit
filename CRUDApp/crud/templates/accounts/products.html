@@ -19,6 +19,9 @@
                 </tr>
                 {% for product in products %}
                     <tr>
+                        {% if product.id == 1 %}
+                         <td>Helloo</td>
+                        {% endif %}
                         <td>{{product.name}}</td>
                         <td>{{product.category}}</td>
                         <td>{{product.price}}</td>
